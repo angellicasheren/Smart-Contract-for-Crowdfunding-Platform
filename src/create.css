@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+/* Header Navigasi */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #28a745;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .sign-in,
+.auth-buttons .sign-up {
+    padding: 8px 16px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #28a745;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons .sign-in:hover,
+.auth-buttons .sign-up {
+    background-color: #28a745;
+    color: #fff;
+}
+/* Form Styling */
+.form-container {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+button.deploy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.deploy-btn:hover {
+    background-color: #218838;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+.link-to-contribution {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-to-contribution:hover {
+    text-decoration: underline;
+}
+
+img#preview {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

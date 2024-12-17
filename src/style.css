@@ -1,0 +1,149 @@
+body {
+    font-family: poppins, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header Navigasi */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #28a745;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .sign-in,
+.auth-buttons .sign-up {
+    padding: 8px 16px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #28a745;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons .sign-in:hover,
+.auth-buttons .sign-up {
+    background-color: #28a745;
+    color: #fff;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaign {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.campaign img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.campaign h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.campaign p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.campaign .deadline, .campaign .funds-needed {
+    font-weight: bold;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+.footer p {
+    font-size: 0.9em;
+}

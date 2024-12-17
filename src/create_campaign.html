@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Crowdfunding Campaign</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <!-- Header Navigasi -->
+    <header class="header">
+        <div class="logo">
+            <a href="#">Crowdfunding</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Donate</a></li>
+                <li><a href="create_campaign.html">Fundraise</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Form Campaign Baru -->
+    <div class="form-container">
+        <h1>Deploy Crowdfunding Smart Contract</h1>
+        <form id="campaignForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter description" rows="4" required></textarea>
+
+            <label for="goal">Goal (ETH):</label>
+            <input type="number" id="goal" placeholder="Enter goal amount" step="0.01" min="0.01" required>
+
+            <label for="deadline">End Date:</label>
+            <input type="date" id="deadline" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*" required>
+            <img id="preview" src="#" alt="Image Preview" style="display:none; margin-top:10px; max-width:100%;">
+
+            <button type="submit" class="deploy-btn">Deploy Campaign</button>
+        </form>
+        <p id="successMessage" class="success-message"></p>
+        <a href="index.html" class="link-to-contribution">Go to Contribution Page</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Campaigns</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header Navigasi -->
+<header class="header">
+    <div class="logo">
+        <a href="#">Crowdfunding</a>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Donate</a></li>
+            <li><a href="create_campaign.html">Fundraise</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <button class="sign-in">Sign In</button>
+        <button class="sign-up">Sign Up</button>
+    </div>
+</header>
+
+    <h1>Campaigns for Donation</h1>
+
+    <div class="campaigns">
+        <!-- Campaign 1 -->
+        <div class="campaign" id="campaign1">
+            <img src="./images/school.jpg" alt="School Campaign" class="campaign-image">
+            <h2>Pembangunan Sekolah Wilayah XXX</h2>
+            <p>Deskripsi: Membantu membangun sekolah di wilayah yang membutuhkan pendidikan.</p>
+            <p><strong>Deadline:</strong> <span class="deadline">2024-12-31</span></p>
+            <p><strong>Dana yang Dibutuhkan:</strong> <span class="funds-needed">5,000 ETH</span></p>
+            <input type="number" id="amount1" placeholder="Masukkan jumlah ETH" step="0.01" min="0.01">
+            <button class="donate-btn" onclick="donateToCampaign(0, 'amount1')">Donate</button>
+        </div>
+
+        <!-- Campaign 2 -->
+        <div class="campaign" id="campaign2">
+            <img src="./images/mosque.jpg" alt="Mosque Campaign" class="campaign-image">
+            <h2>Pembangunan Tempat Ibadah</h2>
+            <p>Deskripsi: Membangun tempat ibadah untuk komunitas di daerah yang kurang.</p>
+            <p><strong>Deadline:</strong> <span class="deadline">2025-01-17</span></p>
+            <p><strong>Dana yang Dibutuhkan:</strong> <span class="funds-needed">3,500 ETH</span></p>
+            <input type="number" id="amount2" placeholder="Masukkan jumlah ETH" step="0.01" min="0.01">
+            <button class="donate-btn" onclick="donateToCampaign(1, 'amount2')">Donate</button>
+        </div>
+
+        <!-- Campaign 3 -->
+        <div class="campaign" id="campaign3">
+            <img src="./images/technology.jpg" alt="Technology Campaign" class="campaign-image">
+            <h2>Donasi Perawatan Teknologi ABC</h2>
+            <p>Deskripsi: Mendukung perawatan dan pembaruan teknologi ABC untuk meningkatkan kualitas hidup.</p>
+            <p><strong>Deadline:</strong> <span class="deadline">2024-12-25</span></p>
+            <p><strong>Dana yang Dibutuhkan:</strong> <span class="funds-needed">10,000 ETH</span></p>
+            <input type="number" id="amount3" placeholder="Masukkan jumlah ETH" step="0.01" min="0.01">
+            <button class="donate-btn" onclick="donateToCampaign(2, 'amount3')">Donate</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Crowdfunding by Angellica & Adinda</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
